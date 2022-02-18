@@ -32,6 +32,7 @@ const prepareDOMEvents = () => {
 
       $ulList.append(newToDo);
 
+      $todoHeading.textContent = "Your TodoList: ";
       $todoInput.value = "";
       $errorInfo.textContent = "";
     } else {
@@ -94,6 +95,7 @@ const prepareDOMEvents = () => {
     const allTodos = $ulList.querySelectorAll("li");
 
     if (allTodos.length === 0) {
+      $todoHeading.textContent = "Add your first todo!";
       $errorInfo.textContent = "There are no tasks in the list.";
     }
   };
