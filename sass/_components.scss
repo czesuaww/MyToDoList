@@ -1,0 +1,33 @@
+@import "./colors";
+
+.tools button {
+  padding: 1.3em 1em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tools button:hover {
+  background-color: $white-light;
+}
+
+.complete {
+  color: $light-blue;
+}
+
+.edit {
+  font-weight: bold;
+  color: $edit-color;
+}
+
+.delete {
+  color: $delete-color;
+}
+
+.completed {
+  font-size: 1rem;
+  color: $light-dark;
+  text-decoration: line-through;
+  font-style: italic;
+}

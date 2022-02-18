@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce1ab2aef5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="todo">
+      <div class="todo__header">
+        <h1 class="todo__header-heading">My ToDo List</h1>
+        <input
+          type="text"
+          class="todo__header-todoInput"
+          placeholder="Enter the task text..."
+        />
+        <button class="todo__header-btnAdd">Add</button>
+      </div>
+      <div class="todo__todoList">
+        <h3 class="todo__todoList-heading">To-do list:</h3>
+        <p class="todo__todoList-errorInfo">There are no tasks in the list.</p>
+        <ul></ul>
+      </div>
+    </div>
+
+    <div class="popup">
+      <h3 class="popup__heading">Edit task:</h3>
+      <div class="popup__popupBody">
+        <p class="popup__popupBody-popupInfo"></p>
+        <input
+          type="text"
+          class="popup__popupBody-popupInput"
+          placeholder="Enter new task content ..."
+        />
+        <button class="popup__popupBody-popupBtn accept">Confirm</button>
+        <button class="popup__popupBody-popupBtn cancel">Cancel</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

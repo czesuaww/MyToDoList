@@ -1,0 +1,159 @@
+@import "./components";
+@import "./colors";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 7em;
+  font-family: "Montserrat", sans-serif;
+  background-color: $white-light;
+}
+
+h1 {
+  color: $white-light;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.fas {
+  pointer-events: none;
+}
+
+.todo {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
+  text-align: center;
+
+  &__header {
+    border-radius: 5px 5px 0 0;
+    padding: 3em;
+    background-image: $back-color-header;
+
+    &-heading {
+      color: $todo-heading;
+    }
+    &-todoInput {
+      width: 80%;
+      padding: 0.5em 1em;
+      margin-right: 1.5em;
+      border: none;
+      border-radius: 5px;
+      color: $light-dark;
+      background-color: $white-light;
+    }
+
+    &-btnAdd {
+      margin-top: 1em;
+      padding: 0.9em 1.5em;
+      //   border: none;
+      border-radius: 5px;
+      color: $deep-dark;
+      background-color: $white-light;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.3s, background-color 0.3s;
+
+      &:hover {
+        color: $white;
+        background-color: $light-dark;
+      }
+    }
+  }
+
+  &__todoList {
+    padding: 1.5em 0;
+
+    &-heading {
+      text-transform: uppercase;
+      margin-bottom: 1.3em;
+    }
+
+    &-errorInfo {
+      margin-top: 1.5em;
+      color: $error-color;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1.3em;
+      padding-left: 1.5em;
+      text-align: left;
+      list-style: none;
+      background-color: $white-light;
+    }
+  }
+}
+.popup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1.4em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  color: $white-light;
+  background-color: $light-dark;
+  border-radius: 5px;
+
+  &__heading {
+    padding: 1.5em;
+  }
+
+  &__popupBody {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 1em;
+
+    &-popupInfo {
+      color: $white-light;
+      margin-bottom: 1.5em;
+    }
+
+    &-popupInfo {
+      width: 100%;
+      padding: 1em 1.5em;
+      border: none;
+      border-radius: 5px;
+      color: $light-dark;
+      background-color: $white-light;
+    }
+
+    &-popupInput {
+      width: 30%;
+      padding: 1em 1.5em;
+      margin: 1.5em;
+      border-radius: 5px;
+    }
+    &-popupBtn {
+      width: 30%;
+      display: inline-block;
+      padding: 1em 1.5em;
+      margin: 1.5em;
+      border: none;
+      border-radius: 5px;
+      color: $deep-dark;
+      background-color: $white-light;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.3s, background-color 0.3s;
+
+      &:hover {
+        color: $white;
+        background-color: $light-blue;
+      }
+    }
+  }
+}

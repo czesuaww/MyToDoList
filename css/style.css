@@ -1,0 +1,219 @@
+.tools button {
+  padding: 1.3em 1em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.tools button:hover {
+  background-color: whitesmoke;
+}
+
+.complete {
+  color: #0084ff;
+}
+
+.edit {
+  font-weight: bold;
+  color: #0fb345;
+}
+
+.delete {
+  color: tomato;
+}
+
+.completed {
+  font-size: 1rem;
+  color: #4f525c;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 7em;
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+}
+
+h1 {
+  color: whitesmoke;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.fas {
+  pointer-events: none;
+}
+
+.todo {
+  width: 500px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
+          box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
+  text-align: center;
+}
+
+.todo__header {
+  border-radius: 5px 5px 0 0;
+  padding: 3em;
+  background-image: linear-gradient(340deg, #11151b 0%, #53585a 100%);
+}
+
+.todo__header-heading {
+  color: orange;
+}
+
+.todo__header-todoInput {
+  width: 80%;
+  padding: 0.5em 1em;
+  margin-right: 1.5em;
+  border: none;
+  border-radius: 5px;
+  color: #4f525c;
+  background-color: whitesmoke;
+}
+
+.todo__header-btnAdd {
+  margin-top: 1em;
+  padding: 0.9em 1.5em;
+  border-radius: 5px;
+  color: #1a1a1a;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.todo__header-btnAdd:hover {
+  color: #fff;
+  background-color: #4f525c;
+}
+
+.todo__todoList {
+  padding: 1.5em 0;
+}
+
+.todo__todoList-heading {
+  text-transform: uppercase;
+  margin-bottom: 1.3em;
+}
+
+.todo__todoList-errorInfo {
+  margin-top: 1.5em;
+  color: red;
+}
+
+.todo__todoList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.3em;
+  padding-left: 1.5em;
+  text-align: left;
+  list-style: none;
+  background-color: whitesmoke;
+}
+
+.popup {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 1.4em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 500px;
+  color: whitesmoke;
+  background-color: #4f525c;
+  border-radius: 5px;
+}
+
+.popup__heading {
+  padding: 1.5em;
+}
+
+.popup__popupBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  padding: 1em;
+}
+
+.popup__popupBody-popupInfo {
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+}
+
+.popup__popupBody-popupInfo {
+  width: 100%;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 5px;
+  color: #4f525c;
+  background-color: whitesmoke;
+}
+
+.popup__popupBody-popupInput {
+  width: 30%;
+  padding: 1em 1.5em;
+  margin: 1.5em;
+  border-radius: 5px;
+}
+
+.popup__popupBody-popupBtn {
+  width: 30%;
+  display: inline-block;
+  padding: 1em 1.5em;
+  margin: 1.5em;
+  border: none;
+  border-radius: 5px;
+  color: #1a1a1a;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.popup__popupBody-popupBtn:hover {
+  color: #fff;
+  background-color: #0084ff;
+}
+/*# sourceMappingURL=style.css.map */
